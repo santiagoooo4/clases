@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'pooins', sans-serif;
+    /* background: url(moon.jpg); */
+    background: wheat;
+    background-attachment:fixed;
+    /* object-fit:contain; */
+}
+header
+{
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255,255,255, 1);
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.5) ;
+    z-index: 100;
+}
+:root
+{
+    --clr:#04355d;
+    --clr2:#56045d;
+}
+.logo
+{
+    color: var(--clr);
+    height: 50px;
+    font-size: 2em;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 700;
+    z-index: 100;
+}
+.menu-toggle
+{
+    display: none;
+}
+.nav
+{   position: relative ;
+    float:right;
+    z-index: 50;
+}
+.clearfix
+{
+    clear: both;
+}
+.nav__ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.nav__ul-li
+{
+    list-style: none;
+}
+
+.nav__ul-li-a
+{
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--clr);
+    font-weight: 700;
+    border-radius: 10px;
+}
+.nav__ul-li-a.active,
+.nav__ul-li-a:hover
+{
+    background: var(--clr);
+    color: #fff;
+    /* color-interpolation-filters: invert(100%); */
+    transition: 0.5s;
+}
+@media (max-width: 1200px)
+{
+    header
+    {
+        margin: 20px;
+    }
+}
+@media (max-width: 768px)
+{
+    header
+    {
+        height: 50px;
+    }
+    .logo
+    {
+        margin-top: -25px;
+    }
+    .nav
+    {
+        display: inline;
+        position: relative;
+        top: -100vh;
+        float: none;
+        transition: .5s;
+        background: #fff;
+        
+    }
+
+    .clearfix
+    {
+        display: none;
+        
+    }
+    .nav__ul
+    {
+        /* position: absolute; */
+        display: block;
+        width: 100%;
+        /* float: left; */
+        /* margin-top: 45px; */
+    }
+    
+    .menu-toggle
+    {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin-top: -15px;
+        float: right;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: .3s;
+        
+    }
+    .span_img
+    {
+        width: 35px;
+        margin: 3px;
+        filter: invert(16%) sepia(73%) saturate(1038%) hue-rotate(177deg) brightness(98%) contrast(102%);
+        
+    }
+    .menu-toggle:hover
+    {
+        background: var(--clr);
+
+    }
+
+    .span_img:hover
+    {
+        filter: invert(100%)
+    }
+    header:hover > .nav, .clearfix
+    {
+        top: 20px;
+        display: block;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,.5) ;
+        
+    }
+    header:hover > .nav
+    {
+        height: 300px;
+        
+    }
+}
