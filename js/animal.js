@@ -1,13 +1,16 @@
-class Animal {
-    constuctor(name, edad, specie) {
+export default class Animal {
+    constuctor(name, age, specie) {
         this.name = name;
-        this.edad = edad;
+        this.age = age;
         this.specie = specie;
     }
     move(){
-        console.log(`${this.animal} se mueve`);
+        return `${this.name} se mueve`;
     }
     speak(){
-        console.log(`${this.animal} hace un ruido`);
+        return `${this.name} hace un ruido`;
+    }
+    eat(){
+        return `${this.name} está comiendo`;
     }
 }
