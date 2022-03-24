@@ -6,7 +6,8 @@ class Animal {
     }
     move(){
         console.log(`${this.animal} se mueve`);
-        console.log(`${this.animal} hace un ruido`)
     }
-
+    speak(){
+        console.log(`${this.animal} hace un ruido`);
+    }
 }
