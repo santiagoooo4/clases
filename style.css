@@ -9,7 +9,7 @@ body
     background-attachment:fixed;
     /* object-fit:contain; */
 }
-header
+header 
 {
     position: relative;
     max-width: 1200px;
@@ -82,6 +82,45 @@ header
     /* color-interpolation-filters: invert(100%); */
     transition: 0.5s;
 }
+.cards
+{
+    display: flex;
+    flex-direction: column;
+}
+.cardAnimal
+{
+    display: grid;
+    grid-template-areas: "h3 img" "p img" "p img" "b img";
+    padding: 10px;
+    margin: 20px;
+    background:rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+    max-width: 40vw;
+    overflow: hidden;
+}
+
+.cardAnimal h3{
+    /* margin-right: 20vw; */
+    grid-area: h3;
+    text-align: center;
+}
+.cardAnimal img{
+    max-width: 18vw;
+    border-radius: 10px;
+    grid-area: img;
+    margin:auto 0px auto 10px;
+    
+}
+.cardAnimal p
+{
+    grid-area: p;
+}
+.cardAnimal .buttonHambre
+{
+    grid-area: b;
+}
+
 @media (max-width: 1200px)
 {
     header

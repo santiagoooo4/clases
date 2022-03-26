@@ -2,10 +2,19 @@ import Header from "./header.js";
 import Animal from "./animal.js";
 import Gato from "./gato.js";
 import Perro from "./perro.js";
+import CardAnimal from "./card.js";
 
 let header = document.querySelector("#myHeader");
 let myHeader = new Header("LoGo");
 header.innerHTML = myHeader.render();
+
+let insertCard1 = document.querySelector(".cards");
+let card1 = new CardAnimal("./img/tomas.jpg", "Tomás", 12, "Perro");
+insertCard1.innerHTML = card1.newCard();
+
+let insertCard2 = document.querySelector(".cards");
+let card2 = new CardAnimal("./img/koshka.jpg", "Koshka", 3, "Gato");
+insertCard2.innerHTML = card2.newCard();
 
 let gato1 = new Gato("koshca", 3, "mix", "hembra");
 gato1.miau();
