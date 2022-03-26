@@ -1,5 +1,5 @@
 import Animal from "./animal.js";
-export default class Perro extends Animal{
+export default class Perro extends Animal {
     constructor(name, age, race, sex){
         super(name, age);
         this.race = race;
