@@ -85,7 +85,8 @@ header
 .cards
 {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .cardAnimal
 {
@@ -96,7 +97,8 @@ header
     background:rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,.5);
-    max-width: 40vw;
+    max-width: 35vw;
+    min-width: 400px;
     overflow: hidden;
 }
 
@@ -106,7 +108,9 @@ header
     text-align: center;
 }
 .cardAnimal img{
-    max-width: 18vw;
+    max-width: 200px;
+    min-width: 100px;
+    max-height: 150px;
     border-radius: 10px;
     grid-area: img;
     margin:auto 0px auto 10px;
